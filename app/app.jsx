@@ -2,19 +2,13 @@ var React = require('react');
 var ReactDOM = require('react-dom');
 var {Route, Router, IndexRoute, hashHistory} = require('react-router');
 
-var Main = require('Main');
-
-//Load foundation using chained loaders
-require('style!css!foundation-sites/dist/foundation.min.css')
+//Load foundation
 $(document).foundation();
 
 //app css
 require('style!css!sass!applicationStyles')
 
 ReactDOM.render(
-  <Router history={hashHistory}>
-    <Route path="/" component={Main}>
-    </Route>
-  </Router>,
+  <p>React Boilerplate</p>,
   document.getElementById('app')
 );
